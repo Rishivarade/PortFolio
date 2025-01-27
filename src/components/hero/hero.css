@@ -23,12 +23,74 @@
     width: max-content;
   }
   
-  .hImg img {
+  /* .hImg img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+  } */
   
+
+.hImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px; /* Optional: Rounded corners */
+  transition: transform 0.3s ease;
+}
+
+.hImg img:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.hImg::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  border-radius: 15px; /* Matches or enhances the image's shape */
+  z-index: -1;
+  background: linear-gradient(
+    120deg,
+    #ff0000,
+    #ff7300,
+    #ffeb00,
+    #47ff00,
+    #00ffee,
+    #2d47ff,
+    #d800ff,
+    #ff0000
+  ); /* Multicolor gradient */
+  background-size: 300% 300%;
+  animation: rotate-border 3s linear infinite, glow-effect 2s infinite alternate;
+}
+
+@keyframes rotate-border {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes glow-effect {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 50px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.2);
+  }
+}
+
+
   .hSection {
     width: 50%;
     height: 100%;
@@ -119,7 +181,7 @@
   }
   
   .bubbleContainer {
-    width: 50%;
+    width: 55%;
     display: flex;
     align-items: end;
     gap: 8px;

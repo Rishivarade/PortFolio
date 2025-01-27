@@ -132,7 +132,58 @@
       width: 100%;
     }
   
-    .sSection.right {
-      display: none;
-    }
+
   }
+
+.rotational-container .image-wrapper {
+  position: absolute;
+  width: 55%;
+  height: 30%;
+  transform-style: preserve-3d;
+  animation: rotate 10s infinite linear;
+}
+
+.rotational-container img {
+  position: absolute;
+  width:90px; /* Adjust image size */
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Position images in a circular pattern */
+.rotational-container img:nth-child(1) {
+  transform: rotateY(0deg) translateZ(120px);
+}
+.rotational-container img:nth-child(2) {
+  transform: rotateY(45deg) translateZ(120px);
+}
+.rotational-container img:nth-child(3) {
+  transform: rotateY(90deg) translateZ(120px);
+}
+.rotational-container img:nth-child(4) {
+  transform: rotateY(135deg) translateZ(120px);
+}
+.rotational-container img:nth-child(5) {
+  transform: rotateY(180deg) translateZ(120px);
+}
+.rotational-container img:nth-child(6) {
+  transform: rotateY(225deg) translateZ(120px);
+}
+.rotational-container img:nth-child(7) {
+  transform: rotateY(270deg) translateZ(120px);
+}
+.rotational-container img:nth-child(8) {
+  transform: rotateY(315deg) translateZ(120px);
+}
+
+/* Keyframe animation for rotation */
+@keyframes rotate {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}

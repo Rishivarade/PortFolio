@@ -63,6 +63,7 @@
 /* Project Images */
 .pImg {
   width: 40%;
+  height: 50%;
   border-radius: 20px;
   overflow: hidden;
 }

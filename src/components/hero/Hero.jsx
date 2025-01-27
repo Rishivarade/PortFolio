@@ -54,7 +54,7 @@ const Hero = () => {
                     animate="animate"
                     className="awards">
                     <motion.h2 variants={awardVariants}>Full Stack Developer</motion.h2>
-                    <motion.p variants={awardVariants}> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</motion.p>
+                    <motion.p variants={awardVariants}> Frontend, Backend, Web-Design, Web Application,Services </motion.p>
                     <motion.div variants={awardVariants} className="awardList">
                         <motion.img variants={awardVariants} src="/award1.png" alt="" />
                         <motion.img variants={awardVariants} src="/award2.png" alt="" />
@@ -116,7 +116,7 @@ const Hero = () => {
                 </motion.div>
                 <Speech />
                 <div className="certificate">
-                    <img src="/certificate.png" alt="" />
+                    <img src="/logoo.png" alt="" />
                 </div>
                 <motion.a animate={{
                     x: [200, 0],
@@ -166,7 +166,7 @@ const Hero = () => {
             </div>
             <div className="bg">
                 <div className="hImg">
-                    <img src="/hero.png" alt="" />
+                    <img src="/homepr.png" alt="" />
                 </div>
             </div>
         </div>

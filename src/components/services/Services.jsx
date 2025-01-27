@@ -73,7 +73,7 @@ const Services = () => {
               variants={listVariants}
               className="service"
               key={service.id}
-              // onClick={() => setCurrentServiceId(service.id)}
+            // onClick={() => setCurrentServiceId(service.id)}
             >
               <div className="serviceIcon">
                 <img src={service.img} alt="" />
@@ -90,15 +90,28 @@ const Services = () => {
           {/* <Counter from={0} to={72} text="Happy Clients" /> */}
         </div>
       </div>
-      {/* <div className="sSection right">
-        {currentServiceId === 1 ? (
+      <div className="sSection right">
+        {/* {currentServiceId === 1 ? (
           <ComputerModelContainer />
         ) : currentServiceId === 2 ? (
           <MugModelContainer />
         ) : (
           <ConsoleModelContainer />
-        )}
-      </div> */}
+        )} */}
+        <div class="rotational-container">
+          <div class="image-wrapper">
+            <img src="/rishai.png" alt="Image 1" />
+            <img src="/groovemade.png" alt="Image 2" />
+            <img src="/snowe.png" alt="Image 3" />
+            <img src="/port.png" alt="Image 4" />
+            <img src="/shark.png" alt="Image 5" />
+            <img src="/notes.png" alt="Image 6" />
+            <img src="/publish.png" alt="Image 7" />
+            <img src="/booport.png" alt="Image 8" />
+          </div>
+        </div>
+
+      </div>
     </div>
   );
 };

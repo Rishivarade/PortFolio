@@ -6,24 +6,24 @@ import Contact from "../contact/Contact";
 const items = [
   {
     id: 1,
-    img: "/p1.jpg",
-    title: "Full Stack Blog Application",
+    img: "/rishai.png",
+    title: "Chat-Ai RishAI (GEMINI api) ",
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
     link: "/",
   },
   {
     id: 2,
-    img: "/p2.jpg",
-    title: "School Management System",
+    img: "/groovemade.png",
+    title: "Groovemade Workspace",
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
-    link: "/",
+    link: "https://cosmo-frontend-yzpj.vercel.app/",
   },
   {
     id: 3,
-    img: "/p3.jpg",
-    title: "Real-time Chat Application",
+    img: "/snowe.png",
+    title: "Snowe Web Application",
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
-    link: "/",
+    link: "https://frontend-intern.vercel.app/",
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ const items = [
   },
   {
     id: 5,
-    img: "/p5.jpg",
+    img: "/port.png",
     title: "Animated Portfolio Website",
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
     link: "/",
