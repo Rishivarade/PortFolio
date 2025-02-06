@@ -7,37 +7,37 @@ const items = [
   {
     id: 1,
     img: "/rishai.png",
-    title: "Chat-Ai RishAI (GEMINI api) ",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
-    link: "/",
+    title: "RishAI chat-ai (GEMINI api) ",
+    desc: "The interface is simple and distraction-free, focusing on the user input/output interaction. This makes it intuitive for both beginners and advanced users.",
+    link: "https://github.com/Rishivarade/Chatgpt-OpenAI",
   },
   {
     id: 2,
     img: "/groovemade.png",
     title: "Groovemade Workspace",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
-    link: "https://cosmo-frontend-yzpj.vercel.app/",
+    desc: "The Grovemade website showcases a high-end collection of home office accessories, furniture, and organizational tools. Their design emphasizes a blend of functionality and aesthetic appeal, using premium materials like walnut, oak, and maple.",
+    link: "https://github.com/Rishivarade/groovemade",
   },
   {
     id: 3,
     img: "/snowe.png",
     title: "Snowe Web Application",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
-    link: "https://frontend-intern.vercel.app/",
+    desc: "The Snowe Home Collection is a lifestyle brand that offers high-quality, minimalist home essentials, including linens, dinnerware, glassware, and furniture. It is designed to provide modern and timeless products for everyday living.",
+    link: "https://github.com/Rishivarade/snowe",
   },
   {
     id: 4,
-    img: "/p4.jpg",
-    title: "Social Media Project",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
-    link: "/",
+    img: "/movie.png",
+    title: "Movie CRUD Project",
+    desc: "A Movie CRUD application with a Node.js + Express backend and a React frontend allows users to create, read, update, and delete movies stored in a MongoDB database. The backend provides RESTful APIs, while the frontend offers an interactive UI",
+    link: "https://github.com/Rishivarade/Node-js-Diwakar-Sharma/tree/main/MOVIE%20PROJECTS",
   },
-  {
+  { 
     id: 5,
     img: "/port.png",
     title: "Animated Portfolio Website",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
-    link: "/",
+    desc: "Versatile Full Stack Developer skilled in building scalable web applications with modern front-end and back-end technologies. Passionate about creating seamless user experiences and efficient system architectures.",
+    link: "https://github.com/Rishivarade/PortFolio",
   },
 ];
 
@@ -146,23 +146,23 @@ const Portfolio = () => {
     <>
       <div className="portfolio" ref={ref}>
       <h1 className="head">PROJECTS</h1>
+      
         <motion.div className="pList" style={{ x: xTranslate }}>
           <div
             className="empty"
             style={{
-              width: window.innerWidth - containerDistance,
-              // backgroundColor: "pink",
+              width: window.innerWidth - containerDistance
             }}
           />
           {items.map((item) => (
             <ListItem item={item} key={item.id} />
           ))}
         </motion.div>
+        {/* <section />
         <section />
-        <section />
-        <section />
-        <section />
-        <section />
+        <section /> */}
+        {/* <section /> */}
+        {/* <section /> */}
         {/* <div className="pProgress">
           <svg width="100%" height="100%" viewBox="0 0 160 160">
             <circle

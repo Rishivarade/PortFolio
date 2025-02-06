@@ -76,7 +76,7 @@
   
   @media (max-width: 768px) {
     .contact {
-      flex-direction: column;
+      flex-direction: row;
     }
   
     .cSection {
@@ -84,9 +84,34 @@
     }
   
     .cSection:first-child {
-      height: 70%;
+      height: 50%;
     }
     .cSection:last-child {
-      height: 30%;
+
+      height: 50%;
     }
+  }
+  @media (max-width: 576px){
+    .contact{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    .cSection{
+      width: 100%;
+    }
+    .cSection:first-child {
+      height: 50%;
+      width: 100%;
+    }
+    .cSection:last-child {
+      margin-top: 250px;
+      height: 60%;
+      width: 100%;
+    }
+    form{
+      width: 100%;
+      padding: 10%;
+    }
+
   }

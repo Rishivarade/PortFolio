@@ -2,6 +2,8 @@ import React from 'react'
 import "./hero.css";
 import Speech from './Speech'
 import { motion } from "motion/react";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 const awardVariants = {
     initial: {
@@ -37,7 +39,8 @@ const followVariants = {
 
 const Hero = () => {
     return (
-        <div className='hero'>
+        <>
+         <div className='hero'>
             <div className="hSection left">
                 <motion.h1
                     initial={{ y: -100, opacity: 0 }}
@@ -56,9 +59,15 @@ const Hero = () => {
                     <motion.h2 variants={awardVariants}>Full Stack Developer</motion.h2>
                     <motion.p variants={awardVariants}> Frontend, Backend, Web-Design, Web Application,Services </motion.p>
                     <motion.div variants={awardVariants} className="awardList">
-                        <motion.img variants={awardVariants} src="/award1.png" alt="" />
-                        <motion.img variants={awardVariants} src="/award2.png" alt="" />
-                        <motion.img variants={awardVariants} src="/award3.png" alt="" />
+                        <a href="https://github.com/Rishivarade">
+                            <motion.img variants={awardVariants} src="/git.png" alt="" />
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/hrushikesh-varade-38b442313/">
+                            <motion.img variants={awardVariants} src="/linkedin.png" alt="" />
+                        </a>
+
+                        <motion.img variants={awardVariants} src="/email.jpg"  alt="" />
                     </motion.div>
                 </motion.div>
                 <motion.a
@@ -68,7 +77,7 @@ const Hero = () => {
                         duration: 4,
                         ease: "easeInOut",
                     }}
-                    href="#sevices">
+                    href="#ser  vices">
                     <svg
                         width="50px"
                         height="50px"
@@ -102,13 +111,21 @@ const Hero = () => {
                     initial="initial"
                     animate="animate" className="follow">
                     <motion.a variants={followVariants} href="">
-                        <img src="/instagram.png" alt="" />
+                        {/* <img src="/instagram.png" alt="" /> */}
+                        <a href="https://github.com/Rishivarade">
+                            <p style={{ fontSize: "20px" }}><FaGithub /></p>
+                        </a>
+
                     </motion.a>
                     <motion.a variants={followVariants} href="">
                         <img src="/facebook.png" alt="" />
                     </motion.a>
                     <motion.a variants={followVariants} href="">
-                        <img src="/youtube.png" alt="" />
+                        {/* <img src="/linked.png" alt="" /> */}
+                        <a href="https://www.linkedin.com/in/hrushikesh-varade-38b442313/">
+                            <p style={{ fontSize: "20px" }}><FaLinkedinIn /></p>
+                        </a>
+
                     </motion.a>
                     <motion.div variants={followVariants} className="followTextContainer">
                         <div className="followText">FOLLOW ME</div>
@@ -170,6 +187,8 @@ const Hero = () => {
                 </div>
             </div>
         </div>
+        </>
+       
     )
 }
 

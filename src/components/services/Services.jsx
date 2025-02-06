@@ -54,65 +54,66 @@ const Services = () => {
   const ref = useRef();
   const isInView = useInView(ref, { margin: "-200px" });
   return (
-    <div className="services" ref={ref}>
-      <div className="sSection left">
-        <motion.h1
-          variants={textVariants}
-          animate={isInView ? "animate" : "initial"}
-          className="sTitle"
-        >
-          How do I help?
-        </motion.h1>
-        <motion.div
-          variants={listVariants}
-          animate={isInView ? "animate" : "initial"}
-          className="serviceList"
-        >
-          {services.map((service) => (
-            <motion.div
-              variants={listVariants}
-              className="service"
-              key={service.id}
-            // onClick={() => setCurrentServiceId(service.id)}
-            >
-              <div className="serviceIcon">
-                <img src={service.img} alt="" />
-              </div>
-              <div className="serviceInfo">
-                <h2>{service.title}</h2>
-                <h3>{service.counter} Projects</h3>
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
-        <div className="counterList">
-          <Counter from={0} to={15} text="Projects Completed" />
-          {/* <Counter from={0} to={72} text="Happy Clients" /> */}
+    <>
+      <div className="services" id="#services" ref={ref}>
+        <div className="sSection left">
+          <motion.h1
+            variants={textVariants}
+            animate={isInView ? "animate" : "initial"}
+            className="sTitle"
+          >
+            How do I help?
+          </motion.h1>
+          <motion.div
+            variants={listVariants}
+            animate={isInView ? "animate" : "initial"}
+            className="serviceList"
+          >
+            {services.map((service) => (
+              <motion.div
+                variants={listVariants}
+                className="service"
+                key={service.id}
+              // onClick={() => setCurrentServiceId(service.id)}
+              >
+                <div className="serviceIcon">
+                  <img src={service.img} alt="" />
+                </div>
+                <div className="serviceInfo">
+                  <h2>{service.title}</h2>
+                  <h3>{service.counter} Projects</h3>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+          <div className="counterList">
+            <Counter from={0} to={15} text="Projects Completed" />
+            {/* <Counter from={0} to={72} text="Happy Clients" /> */}
+          </div>
         </div>
-      </div>
-      <div className="sSection right">
-        {/* {currentServiceId === 1 ? (
+        <div className="sSection right">
+          {/* {currentServiceId === 1 ? (
           <ComputerModelContainer />
         ) : currentServiceId === 2 ? (
           <MugModelContainer />
         ) : (
           <ConsoleModelContainer />
         )} */}
-        <div class="rotational-container">
-          <div class="image-wrapper">
-            <img src="/rishai.png" alt="Image 1" />
-            <img src="/groovemade.png" alt="Image 2" />
-            <img src="/snowe.png" alt="Image 3" />
-            <img src="/port.png" alt="Image 4" />
-            <img src="/shark.png" alt="Image 5" />
-            <img src="/notes.png" alt="Image 6" />
-            <img src="/publish.png" alt="Image 7" />
-            <img src="/booport.png" alt="Image 8" />
+          <div class="rotational-container">
+            <div class="image-wrapper">
+              <img src="/rishai.png" alt="Image 1" />
+              <img src="/groovemade.png" alt="Image 2" />
+              <img src="/snowe.png" alt="Image 3" />
+              <img src="/port.png" alt="Image 4" />
+              <img src="/shark.png" alt="Image 5" />
+              <img src="/notes.png" alt="Image 6" />
+              <img src="/publish.png" alt="Image 7" />
+              <img src="/booport.png" alt="Image 8" />
+            </div>
           </div>
         </div>
-
-      </div>
-    </div>
+      </div>  
+    </>
   );
 };
 
